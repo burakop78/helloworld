@@ -1,3 +1,3 @@
 FROM alpine
-ADD hello.sh /
-ENTRYPOINT ["/bin/bash", "/hello.sh"]
+ADD hello.sh 
+RUN /hello.sh
