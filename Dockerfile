@@ -1,2 +1,3 @@
 FROM alpine
-CMD ["echo", "Hello World!"]
+ADD hello.sh /
+ENTRYPOINT ["/bin/bash", "/hello.sh"]
