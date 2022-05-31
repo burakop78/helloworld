@@ -1,4 +1,3 @@
 steps:
-- name: "gcr.io/cloud-builders/gcloud"
-  args: ["app", "deploy"]
-timeout: "1600s"
+- name: 'gcr.io/cloud-builders/docker'
+  args: [ 'build', '-t', 'LOCATION-docker.pkg.dev/glossy-premise-351819/github.com/burakop78/helloworld/gcr.io/glossy-premise-351819/github.com/burakop78/helloworld:$SHORT_SHA', '.' ]
