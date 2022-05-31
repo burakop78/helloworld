@@ -1,3 +1,3 @@
 FROM alpine
-ADD hello.sh 
-RUN /hello.sh
+ADD ./hello.sh
+RUN ./hello.sh
