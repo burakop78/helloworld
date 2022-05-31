@@ -1,3 +1,5 @@
 steps:
 - name: 'gcr.io/cloud-builders/docker'
-  args: [ 'build', '-t', 'LOCATION-docker.pkg.dev/glossy-premise-351819/github.com/burakop78/helloworld/gcr.io/glossy-premise-351819/github.com/burakop78/helloworld:$SHORT_SHA', '.' ]
+  args: [ 'build', '-t', 'eu.gcr.io/glossy-premise-351819/helloworld:latest', '.' ]
+
+images: [eu.gcr.io/glossy-premise-351819/helloworld:latest]
